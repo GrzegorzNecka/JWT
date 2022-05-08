@@ -13,5 +13,8 @@
     "dependencies": {
         "epxress": "0.0.1-security",
         "jsonwebtoken": "^8.5.1"
+    },
+    "devDependencies": {
+        "dotenv": "^16.0.0"
     }
 }
