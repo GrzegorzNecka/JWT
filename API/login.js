@@ -12,7 +12,7 @@ const login = (app) => {
 
         const payload = user;
 
-        const token = jwt.sign(payload, process.env.ACCESS_TOKEN, { expiresIn: "30s" }); // tego tokenu nie chcę przechowywać na serwerze
+        const token = jwt.sign(payload, process.env.ACCESS_TOKEN, { expiresIn: "15s" }); // tego tokenu nie chcę przechowywać na serwerze
         const refreshToken = jwt.sign(payload, process.env.REFRESH_TOKEN, { expiresIn: "1h" }); // ten token chcę przechowywać na serwerze
 
         global.refreshTokens.push(refreshToken);

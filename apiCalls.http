@@ -13,7 +13,7 @@ content-type: application/json
 ###
 GET http://localhost:3000/admin/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsIm5hbWUiOiJBZGFtIiwiZW1haWwiOiJhZGFtQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA5NTkyNiwiZXhwIjoxNjUyMDk1OTU2fQ.86YHMd4uxRZv0Vf0Mg3-JtBYtb2_R6W9lqY5o0koA4U
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsIm5hbWUiOiJBZGFtIiwiZW1haWwiOiJhZGFtQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA5OTcyM30.z7EBYzo7SY1j1w1amIo02tu1jpV-RCMmPfciWma0SDc
 
 
 ###
@@ -22,7 +22,7 @@ POST http://localhost:3000/refresh-token/
 content-type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsIm5hbWUiOiJBZGFtIiwiZW1haWwiOiJhZGFtQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA5NTkyNiwiZXhwIjoxNjUyMDk5NTI2fQ.O8aYnYpPBetTdIuCoBYSv28Bq_9Xk47a0YV3TkTl_rA"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsIm5hbWUiOiJBZGFtIiwiZW1haWwiOiJhZGFtQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA5OTA5OCwiZXhwIjoxNjUyMDk5MTI4fQ.eZp7ONsiusxIaA43e-IjTzwWnXac7g2EXRTg9jOEdi8"
 }
 
 

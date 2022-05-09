@@ -1,8 +1,5 @@
 import "dotenv/config";
 import express from "express";
-import jwt from "jsonwebtoken";
-import { users, refreshTokens } from "./db.js";
-import authMiddleware from "./authMiddleware.js";
 
 import login from "./API/login.js";
 import refreshToken from "./API/refreshToken.js";
@@ -12,11 +9,14 @@ import admin from "./API/admin.js";
 global.refreshTokens = [];
 
 const app = express();
-//apllication-json
-app.use(express.json());
+
+app.use(express.json()); //apllication-json
+app.set("view engine", "hbs");
 
 app.get("/", (req, res) => {
-    res.send("Witaj na stronie głównej");
+    res.render("index", {
+        pageBody: "hello",
+    });
 });
 
 login(app);
@@ -27,4 +27,4 @@ logout(app);
 
 admin(app);
 
-app.listen(process.env.PORT, () => console.log("Server słucha..."));
+app.listen(process.env.PORT, () => console.log(`server słucha na porcie ${process.env.PORT}`));

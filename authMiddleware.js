@@ -7,6 +7,11 @@ const authMiddleware = (req, res, next) => {
     const token = req.headers["authorization"]?.split(" ")[1]; //dfgesdfgcfff
 
     if (!token) {
+        // return res.status(401).render("index", {
+        //     pageBody:
+        //         "Unauthorized - If You want to access tehe resource, use Bear schama authentication with correct JWT",
+        // });
+
         return res
             .status(401)
             .send(
