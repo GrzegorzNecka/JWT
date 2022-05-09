@@ -6,5 +6,4 @@ const users = [
     { id: 13, name: "Eleonora", email: "eleonora@gmail.com" },
 ];
 
-let refreshTokens = [];
-export { users, refreshTokens };
+export { users };

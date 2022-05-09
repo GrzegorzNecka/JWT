@@ -13,12 +13,24 @@ content-type: application/json
 ###
 GET http://localhost:3000/admin/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsIm5hbWUiOiJBZGFtIiwiZW1haWwiOiJhZGFtQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA4NjQ5MywiZXhwIjoxNjUyMDg2NTA4fQ.ijZKM_-QyE5EoUPP-0OMLUPeDQRguA3H1xwKz7fY47A
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsIm5hbWUiOiJBZGFtIiwiZW1haWwiOiJhZGFtQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA5NTkyNiwiZXhwIjoxNjUyMDk1OTU2fQ.86YHMd4uxRZv0Vf0Mg3-JtBYtb2_R6W9lqY5o0koA4U
+
+
+###
+
+POST http://localhost:3000/refresh-token/
+content-type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsIm5hbWUiOiJBZGFtIiwiZW1haWwiOiJhZGFtQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA5NTkyNiwiZXhwIjoxNjUyMDk5NTI2fQ.O8aYnYpPBetTdIuCoBYSv28Bq_9Xk47a0YV3TkTl_rA"
+}
+
+
 
 ###
 DELETE http://localhost:3000/logout/
 Content-Type: application/json
 
 {
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsIm5hbWUiOiJBZGFtIiwiZW1haWwiOiJhZGFtQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA4NjQ5MywiZXhwIjoxNjUyMDg2NTA4fQ.ijZKM_-QyE5EoUPP-0OMLUPeDQRguA3H1xwKz7fY47A"
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsIm5hbWUiOiJBZGFtIiwiZW1haWwiOiJhZGFtQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA5NTkyNiwiZXhwIjoxNjUyMDk5NTI2fQ.O8aYnYpPBetTdIuCoBYSv28Bq_9Xk47a0YV3TkTl_rA"
 }
